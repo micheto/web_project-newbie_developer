@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="masterall">
+    <div class="container">
+        <div class="app-header">
+            <h1 class="header1">Task Manager</h1>
+            <p>Manage your daily tasks efficiently</p>
+        </div>
+        <!-- Add New Task Form -->
+        <input type="text" class="text_1" id="taskTitle" placeholder="Enter new Title...">
+        <input type="text" class="text_2" id="taskDescription" placeholder="Enter new Description...">
+        <button id="addTaskButton"><i class="fas fa-plus"></i> Add</button>
+
+        <!-- Edit Task Form -->
+        <div class="form" id="editForm" style="display: none;">
+            <h2>Edit the task</h2>
+            <input type="text" id="editTitle" placeholder="Заглавие на задачата">
+            <textarea id="editDescription" placeholder="Описание на задачата"></textarea>
+            <button id="updateTaskButton">Save Changes</button>
+            <button id="cancelEditButton">Reset Changes</button>
+        </div>
+    </div>
+    
+    <!-- Task List -->
+    <div class="container2">
+        <div class="tasks">
+            <h2>Task list</h2>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
