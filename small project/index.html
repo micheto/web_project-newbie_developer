@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт за рецепти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Блог за рецепти</h1>
+        <p>Публикувайте своите рецепти и споделяйте с други!</p>
+    </header>
+
+    <main>
+        <!-- Формуляр за добавяне на нова рецепта -->
+        <section id="recipe-form">
+            <h2>Добавете нова рецепта</h2>
+            <form id="new-recipe-form">
+                <label for="recipe-title">Заглавие на рецептата:</label>
+                <input type="text" id="recipe-title" required>
+
+                <label for="recipe-description">Описание на рецептата:</label>
+                <textarea id="recipe-description" required></textarea>
+
+                <label for="recipe-image">Изберете снимка:</label>
+                <input type="file" id="recipe-image" accept="image/*" required>
+
+                <button type="submit">Добавете рецепта</button>
+            </form>
+        </section>
+
+        <!-- Показване на всички публикувани рецепти -->
+        <section id="recipes">
+            <h2>Всички рецепти</h2>
+            <div id="recipe-list">
+                <!-- Рецептите ще се добавят динамично тук -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Блог за рецепти</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
